@@ -2,38 +2,38 @@
 <html lang="en"> 
 <head> 
     <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, ini al-scale=1.0"> 
-    < tle>Smart Register App</ tle> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Smart Register App</title> 
     <!-- Tailwind CSS CDN --> 
-    <script src="h ps://cdn.tailwindcss.com"></script> 
+    <script src="https://cdn.tailwindcss.com"></script> 
     <!-- Inter Font --> 
     <link 
-href="h ps://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swa
+href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swa
  p" rel="stylesheet"> 
     <!-- Link to external CSS file --> 
-    <link rel="stylesheet" href="{{ url_for('sta c', filename='styles.css') }}"> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> 
 </head> 
 <body class="flex flex-col min-h-screen"> 
     <header class="bg-gradient-to-r from-blue-500 to-indigo-600 shadow-md py-4"> 
-        <div class="container mx-auto px-4 flex flex-col sm:flex-row jus fy-between items
+        <div class="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-
 center"> 
             <h1 class="text-3xl font-bold text-white mb-4 sm:mb-0">Smart Register</h1> 
             <nav class="flex flex-wrap gap-3"> 
-                <bu on id="navAddItem" class="nav-bu on bg-blue-400 text-white py-2 px-5 
+                <button id="navAddItem" class="nav-bu on bg-blue-400 text-white py-2 px-5 
 rounded-md hover:bg-blue-500 transi on dura on-150 ease-in-out transform hover:scale
 105 ac ve"> 
                     Add Item 
-                </bu on> 
-                <bu on id="navInventoryView" class="nav-bu on bg-blue-400 text-white py-2 px-5 
+                </button> 
+                <button id="navInventoryView" class="nav-bu on bg-blue-400 text-white py-2 px-5 
 rounded-md hover:bg-blue-500 transi on dura on-150 ease-in-out transform hover:scale
 105"> 
                     Inventory & Valua on 
-                </bu on> 
-                <bu on id="navStockModifica on" class="nav-bu on bg-blue-400 text-white py-2 
+                </button> 
+                <button id="navStockModifica on" class="nav-bu on bg-blue-400 text-white py-2 
 px-5 rounded-md hover:bg-blue-500 transi on dura on-150 ease-in-out transform 
 hover:scale-105"> 
-                    Stock Modifica on 
-                </bu on> 
+                    Stock Modification 
+                </button> 
             </nav> 
         </div> 
     </header> 
