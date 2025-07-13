@@ -45,3 +45,54 @@ requirements.txt: Lists Python dependencies for the project.
 Procfile: Specifies the command to run the application on platforms like Render.
 
 templates/: Contains HTML template files (e.g., index.html).
+static/: Contains static assets like CSS (styles.css) and JavaScript (script.js).
+
+Technologies Used
+
+Flask: Python web framework.
+
+HTML5: Structure of the web pages.
+
+Tailwind CSS: Utility-first CSS framework for styling.
+
+JavaScript: Client-side logic for interactive features and data persistence (using Local Storage).
+
+Gunicorn: WSGI HTTP Server for production deployment.
+
+Setup and Installation
+
+Follow these steps to get the Smart Register app up and running on your local machine.
+
+Prerequisites
+
+Steps
+
+Python 3.x installed on your system.
+
+1. Clone the repository:
+
+2. git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
+
+3. cd YOUR_REPOSITORY_NAME
+
+4. Create a virtual environment (recommended):
+
+5. python-m venv venv
+
+6. Activate the virtual environment:
+
+On macOS/Linux:
+
+source venv/bin/activate
+
+On Windows:
+
+venv\Scripts\activate
+
+7. Install the dependencies:
+
+8. pip install -r requirements.txt
+
+9. Run the Flask application:
+
+10. python app.py
