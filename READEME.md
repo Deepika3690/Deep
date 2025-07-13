@@ -96,3 +96,32 @@ venv\Scripts\activate
 9. Run the Flask application:
 
 10. python app.py
+The application will typically run on http://127.0.0.1:5000/. Open this URL in your web browser.
+
+Deployment on Render
+
+This application is configured for easy deployment on Render.com.
+
+1. Push your code to a GitHub repository.
+
+2. Create a new Web Service on Render.
+
+3. Connect your GitHub repository.
+
+4. Configure the build and start commands:
+
+Build Command: pip install -r requirements.txt
+
+Start Command: gunicorn app:app
+
+5. Deploy! Render will automatically detect your Procfile and requirements.txt to build and run your application.
+
+Usage
+
+Navigate between "Add Item", "Inventory & Valuation", and "Stock Modification" screens using the navigation buttons.
+
+On the "Add Item" screen, fill in the details and click "Add Item" to add new inventory.
+
+On the "Inventory & Valuation" screen, you can view your current stock and search for items.
+
+On the "Stock Modification" screen, select an item, enter the quantity to change, choose the reason (Sale or Damage), and apply the change. If it's a sale, specify the sale price.
